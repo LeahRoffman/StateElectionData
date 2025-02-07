@@ -1,0 +1,1401 @@
+WEC Canvass Reporting System											
+Canvass Results for 2022 General Election - 11/8/2022 6:00:00 AM											
+											
+											
+					Number of Votes Received	Percent of Total Votes		Candidate			Party
+	Office		GOVERNOR							Total Votes:	"2,656,490"
+											
+		Winner			"1,358,774"	 51.15%		Tony Evers / Sara Rodriguez			Democrat
+								99 CAMBRIDGE ROAD			
+								MADISON WI 53704			
+					"1,268,535"	 47.75%		Tim Michels / Roger  Roth			Republican
+								6831 STATE ROAD 83			
+								HARTLAND WI 53029			
+					"27,198"	 1.02%		Joan Ellis Beglinger /			Independent
+								3528 TIMBER LN			
+								CROSS PLAINS WI 53528			
+					104	 0%		Seth Haskin (write-in)			Independent
+											
+								  			
+					"1,879"	 .07%		SCATTERING			
+											
+											
+	Office		ATTORNEY GENERAL							Total Votes:	"2,633,277"
+											
+		Winner			"1,333,369"	 50.64%		Josh Kaul			Democrat
+								2380 WEST LAWN AVE			
+								MADISON WI 53711			
+					"1,298,369"	 49.31%		Eric  Toney			Republican
+								N7115 LEONARD DRIVE			
+								FOND DU LAC WI 54935			
+					"1,539"	 .06%		SCATTERING			
+											
+											
+	Office		SECRETARY OF STATE							Total Votes:	"2,626,943"
+											
+		Winner			"1,268,748"	 48.3%		Doug  La Follette			Democrat
+								1211 RUTLEDGE ST			
+								MADISON WI 53703			
+					"1,261,306"	 48.01%		Amy Lynn Loudenbeck			Republican
+								10737 S State Rd. 140			
+								Clinton WI 53525			
+					"54,413"	 2.07%		Neil  Harmon			Libertarian
+								8717 W CLEVELAND AVE			
+								WEST ALLIS WI 53227			
+					"41,532"	 1.58%		Sharyl R. McFarland			Wisconsin Green Party
+								2521 N 26TH ST			
+								MILWAUKEE WI 53206			
+					944	 .04%		SCATTERING			
+											
+											
+	Office		STATE TREASURER							Total Votes:	"2,607,103"
+											
+					"1,254,949"	 48.14%		Aaron  Richardson			Democrat
+								2676 MCGAW RD			
+								FITCHBURG WI 53711			
+		Winner			"1,293,553"	 49.62%		John S. Leiber			Republican
+								504 GALWAY TERRACE			
+								COTTAGE GROVE WI 53527			
+					"57,333"	 2.2%		Andrew  Zuelke			Constitution
+								578 EUREKA STREET			
+								RIPON WI 54971			
+					"1,268"	 .05%		SCATTERING			
+											
+											
+	Office		UNITED STATES SENATOR							Total Votes:	"2,652,477"
+											
+					"1,310,467"	 49.41%		Mandela Barnes			Democrat
+								7052 N LINCOLNSHIRE CIR			
+								MILWAUKEE WI 53223			
+		Winner			"1,337,185"	 50.41%		Ron Johnson			Republican
+								5171 ISLAND VIEW DR			
+								OSHKOSH WI 54901			
+					67	 0%		Adam Paul (write-in)			Logic Party
+											
+								  			
+					"4,758"	 .18%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 1							Total Votes:	"300,867"
+											
+					"135,825"	 45.14%		Ann Roe			Democrat
+								1904 EASTWOOD AVE			
+								JANESVILLE WI 53545			
+		Winner			"162,610"	 54.05%		Bryan Steil			Republican
+								3709 BRIAR CREST DR			
+								JANESVILLE WI 53546			
+					"2,247"	 .75%		Charles E. Barman			The Going Away Party
+								N620 PETERS RD			
+								SHARON WI 53585			
+					185	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 2							Total Votes:	"378,537"
+											
+		Winner			"268,740"	 70.99%		Mark Pocan			Democrat
+								4062 BAKKEN STENLI RD			
+								BLACK EARTH WI 53515			
+					"101,890"	 26.92%		Erik Olsen			Republican
+								111 W WILSON ST APT. 307			
+								MADISON WI 53703			
+					"7,689"	 2.03%		Douglas Alexander			Term Limits on Congress
+								637 S SHORE DR			
+								MADISON WI 53715			
+					218	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 3							Total Votes:	"317,922"
+											
+					"152,977"	 48.12%		Brad Pfaff			Democrat
+								2122 KRAUSE RD			
+								ONALASKA WI 54650			
+		Winner			"164,743"	 51.82%		Derrick Van Orden			Republican
+								667 E BLACKHAWK AVE			
+								PRAIRIE DU CHIEN WI 53821			
+					202	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 4							Total Votes:	"255,012"
+											
+		Winner			"191,955"	 75.27%		Gwen Moore			Democrat
+								4043 N 19TH PL			
+								MILWAUKEE WI 53209			
+					"57,660"	 22.61%		Tim Rogers			Republican
+								5936 N 38TH ST			
+								MILWAUKEE WI 53209			
+					"5,164"	 2.03%		Robert R. Raymond			Independent
+								1212A E BURLEIGH ST			
+								MILWAUKEE WI 53212			
+					233	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 5							Total Votes:	"378,523"
+											
+					"134,581"	 35.55%		Mike Van Someren			Democrat
+								N38W28992 MIDDLEFIELD RD			
+								PEWAUKEE WI 53072			
+		Winner			"243,741"	 64.39%		Scott Fitzgerald			Republican
+								N4692 MAPLE RD			
+								JUNEAU WI 53039			
+					201	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 6							Total Votes:	"251,999"
+											
+		Winner			"239,231"	 94.93%		Glenn Grothman			Republican
+								N5154 COUNTY ROAD U			
+								GLENBEULAH WI 53023			
+					340	 .13%		Tom Powell (write-in)			Independent
+											
+								  			
+					"12,428"	 4.93%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 7							Total Votes:	"338,268"
+											
+					"128,877"	 38.1%		Richard Dick Ausman			Democrat
+								1964 COUNTY ROAD D			
+								LAC DU FLAMBEAU WI 54538			
+		Winner			"209,224"	 61.85%		Tom Tiffany			Republican
+								9463 BACKWOODS LN			
+								MINOCQUA WI 54548			
+					167	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE IN CONGRESS DISTRICT 8							Total Votes:	"310,196"
+											
+		Winner			"223,981"	 72.21%		Mike Gallagher			Republican
+								2460 BRENNER PL			
+								ALLOUEZ WI 54301			
+					"32,057"	 10.33%		Jacob J. VandenPlas			Libertarian
+								6418 VIGNES RD			
+								STURGEON BAY WI 54235			
+					135	 .04%		Robbie Hoffman (write-in)			Democrat
+											
+								  			
+					"48,896"	 15.76%		Paul David Boucher			Independent
+								1120 ELIZABETH ST			
+								GREEN BAY WI 54302			
+					"3,160"	 1.02%		Julie Hancock (write-in)			Democrat
+											
+								  			
+					"1,967"	 .63%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 1							Total Votes:	"87,420"
+											
+					"35,363"	 40.45%		Andrea Gage-Michaels			Democrat
+								2103 ROCK RIVER CT			
+								DE PERE WI 54115			
+		Winner			"52,009"	 59.49%		André Jacque			Republican
+								1615 LOST DAUPHIN RD			
+								DE PERE WI 54115			
+					48	 .05%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 3							Total Votes:	"40,533"
+											
+		Winner			"27,958"	 68.98%		Tim  Carpenter			Democrat
+								2957 S 38TH ST			
+								MILWAUKEE WI 53215			
+					"12,536"	 30.93%		Angel Sanchez			Republican
+								727 W. MADISON ST.			
+								MILWAUKEE WI 53204			
+					39	 .1%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 5							Total Votes:	"92,084"
+											
+					"42,962"	 46.66%		Jessica  Katzenmeyer			Democrat
+								7139 W GREENFIELD AVE APT # 10			
+								WEST ALLIS WI 53214			
+		Winner			"49,025"	 53.24%		Rob Hutton			Republican
+								17785 MARSEILLE DRIVE			
+								BROOKFIELD WI 53045			
+					97	 .11%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 7							Total Votes:	"80,670"
+											
+		Winner			"54,252"	 67.25%		Chris J. Larson			Democrat
+								3233 S. Herman St			
+								Milwaukee WI 53207-2851			
+					"26,333"	 32.64%		Peter Gilbert			Republican
+								"4110 S Lake Dr, Unit 140"			
+								St Francis WI 53235-5953			
+					85	 .11%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 9							Total Votes:	"61,765"
+											
+		Winner			"57,836"	 93.64%		Devin  LeMahieu			Republican
+								21 S 8TH ST			
+								OOSTBURG WI 53070			
+					"1,237"	 2%		Jarrod Schroeder (write-in)			Democrat
+											
+								  			
+					"2,692"	 4.36%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 11							Total Votes:	"77,123"
+											
+					"32,087"	 41.6%		Steven J. Doelder			Democrat
+								W1103 MANGROVE RD			
+								GENOA CITY WI 53128			
+		Winner			"44,974"	 58.31%		Steve  Nass			Republican
+								N8330 JACKSON ROAD			
+								WHITEWATER WI 53190			
+					62	 .08%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 13							Total Votes:	"63,935"
+											
+		Winner			"61,817"	 96.69%		John  Jagler			Republican
+								601 CLYMAN ST			
+								WATERTOWN WI 53094			
+					"2,118"	 3.31%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 15							Total Votes:	"75,260"
+											
+		Winner			"46,192"	 61.38%		Mark  Spreitzer			Democrat
+								1718 HENDERSON AVENUE			
+								BELOIT WI 53511			
+					"29,006"	 38.54%		Mark Trofimchuck			Republican
+								18327 W CHURCH RD W CHURCH RD			
+								BRODHEAD WI 53520			
+					62	 .08%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 17							Total Votes:	"73,825"
+											
+					"29,398"	 39.82%		Pat Skogen			Democrat
+								1913 12TH AVE			
+								MONROE WI 53566			
+		Winner			"44,405"	 60.15%		Howard  Marklein			Republican
+								S11665 SOELDNER RD			
+								SPRING GREEN WI 53588			
+					22	 .03%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 19							Total Votes:	"79,338"
+											
+					"36,447"	 45.94%		Kristin M Alfheim			Democrat
+								340 W PROSPECT AVE			
+								APPLETON WI 54911			
+		Winner			"42,858"	 54.02%		Rachael Cabral-Guevara			Republican
+								190 RIVER ISLAND CT			
+								APPLETON WI 54914			
+					33	 .04%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 21							Total Votes:	"65,459"
+											
+		Winner			"61,621"	 94.14%		Van H. Wanggaard			Republican
+								1246 BLAINE AVENUE			
+								RACINE WI 53405			
+					"3,838"	 5.86%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 23							Total Votes:	"59,527"
+											
+		Winner			"56,391"	 94.73%		Jesse James			Republican
+								2511 BOTSFORD AVE			
+								ALTOONA WI 54720			
+					"3,136"	 5.27%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 25							Total Votes:	"82,984"
+											
+					"35,652"	 42.96%		Kelly Westlund			Democrat
+								501 11TH AVE E			
+								ASHLAND WI 54806			
+		Winner			"47,293"	 56.99%		Romaine Robert Quinn			Republican
+								2769 13 1/2 Ave			
+								Cameron WI 54822			
+					39	 .05%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 27							Total Votes:	"96,534"
+											
+		Winner			"65,618"	 67.97%		Dianne H. Hesselbein			Democrat
+								1420 N. HIGH POINT RD.			
+								MIDDLETON WI 53562			
+					"30,863"	 31.97%		Robert Relph			Republican
+								4600 Garfoot Road			
+								Cross Plains WI 53528			
+					53	 .05%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 29							Total Votes:	"79,454"
+											
+					"29,798"	 37.5%		Bob Look			Democrat
+								517 WILLIAMS ST			
+								ROTHSCHILD WI 54474			
+		Winner			"49,602"	 62.43%		Cory  Tomczyk			Republican
+								146223 BEAVER RD			
+								MOSINEE WI 54455			
+					54	 .07%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 31							Total Votes:	"77,223"
+											
+		Winner			"38,936"	 50.42%		Jeff Smith			Democrat
+								S7747 NORRISH RD			
+								EAU CLAIRE WI 54701			
+					"38,239"	 49.52%		David  Estenson			Republican
+								N37830 THOMPSON COULEE RD			
+								WHITEHALL WI 54773			
+					48	 .06%		SCATTERING			
+											
+											
+	Office		STATE SENATOR DISTRICT 33							Total Votes:	"69,838"
+											
+		Winner			"67,323"	 96.4%		Chris  Kapenga			Republican
+								N9W31035 CONCORD CT			
+								DELAFIELD WI 53018			
+					"2,515"	 3.6%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 1							Total Votes:	"31,806"
+											
+					"11,916"	 37.46%		Roberta Thelen			Democrat
+								7817 RED CHERRY RD			
+								BAILEYS HARBOR WI 54202			
+		Winner			"19,864"	 62.45%		Joel Kitchens			Republican
+								1117 COVE RD			
+								STURGEON BAY WI 54235			
+					26	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 2							Total Votes:	"27,226"
+											
+					"11,093"	 40.74%		Renee Gasch			Democrat
+								719 LEWIS ST			
+								DE PERE WI 54115			
+		Winner			"16,112"	 59.18%		Shae  Sortwell			Republican
+								13219 County Road Q			
+								Two Rivers WI 54241			
+					21	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 3							Total Votes:	"21,539"
+											
+		Winner			"21,179"	 98.33%		Ron  Tusler			Republican
+								W5721 FIRELANE 12			
+								MENASHA WI 54956			
+					360	 1.67%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 4							Total Votes:	"27,661"
+											
+					"12,287"	 44.42%		Derek  Teague			Democrat
+								2354 East River Dr			
+								Allouez WI 54301			
+		Winner			"15,348"	 55.49%		David  Steffen			Republican
+								715 OLIVE TREE COURT			
+								GREEN BAY WI 54313			
+					26	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 5							Total Votes:	"25,538"
+											
+					"10,258"	 40.17%		Joseph Van Deurzen			Democrat
+								1984 S PINE TREE RD			
+								DE PERE WI 54115			
+		Winner			"15,280"	 59.83%		Joy Goeben			Republican
+								750 BROOKWOOD CIR			
+								HOBART WI 54155			
+					0	0%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 6							Total Votes:	"26,457"
+											
+					"7,694"	 29.08%		William J. Switalla			Democrat
+								300 E. GRAND AVE			
+								WITTENBERG WI 54499			
+		Winner			"14,710"	 55.6%		Peter  Schmidt			Republican
+								W3847 OLD DUMP RD			
+								BONDUEL WI 54107			
+					"4,050"	 15.31%		Dean Neubert (write-in)			Republican
+											
+								  			
+					3	 .01%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 7							Total Votes:	"20,185"
+											
+		Winner			"12,476"	 61.81%		Daniel Graan Riemer			Democrat
+								3022 S. 39th Street			
+								Milwaukee WI 53215-3559			
+					"7,690"	 38.1%		Zachary  Marshall			Republican
+								4110 W Carpenter Ave			
+								Greenfield WI 53221			
+					19	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 8							Total Votes:	"6,700"
+											
+		Winner			"6,573"	 98.1%		Sylvia  Ortiz-Velez			Democrat
+								1336 S 11TH ST			
+								MILWAUKEE WI 53204			
+					127	 1.9%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 9							Total Votes:	"12,007"
+											
+		Winner			"8,644"	 71.99%		Marisabel  Cabrera			Democrat
+								2200 W LAYTON AVE APT. 109			
+								MILWAUKEE WI 53221			
+					"3,345"	 27.86%		Ryan Michael Antczak			Republican
+								2209 So.29th Street			
+								Milwaukee WI 53215			
+					18	 .15%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 10							Total Votes:	"20,984"
+											
+		Winner			"20,730"	 98.79%		Darrin Madison			Democrat
+								4080 N. 21st St. Apt#4			
+								Milwaukee WI 53209			
+					254	 1.21%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 11							Total Votes:	"14,456"
+											
+		Winner			"14,311"	 99%		Dora  Drake			Democrat
+								6561 N 73RD ST			
+								MILWAUKEE WI 53223			
+					145	 1%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 12							Total Votes:	"17,476"
+											
+		Winner			"13,770"	 78.79%		LaKeshia N. Myers			Democrat
+								10615 West Calumet Road			
+								MILWAUKEE WI 53224			
+					"3,688"	 21.1%		Greg Canady			Republican
+								8525 W GRANTOSA DRIVE APT3			
+								MILWAUKEE WI 53225			
+					18	 .1%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 13							Total Votes:	"33,261"
+											
+					"14,523"	 43.66%		Sarah Harrison			Democrat
+								850 GOLDEN MEADOW CT			
+								BROOKFIELD WI 53045			
+		Winner			"18,712"	 56.26%		Tom Michalski			Republican
+								1785 Wedgewood Drive East			
+								Elm Grove WI 53122			
+					26	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 14							Total Votes:	"27,946"
+											
+		Winner			"17,703"	 63.35%		Robyn Vining			Democrat
+								2546 N 66TH STREET			
+								WAUWATOSA WI 53213			
+					"10,219"	 36.57%		Keva  Turner			Republican
+								1345 S 71ST ST			
+								WEST ALLIS WI 53214			
+					24	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 15							Total Votes:	"22,526"
+											
+		Winner			"21,582"	 95.81%		Dave  Maxey			Republican
+								17240 W ROGERS DR			
+								NEW BERLIN WI 53146			
+					944	 4.19%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 16							Total Votes:	"14,337"
+											
+		Winner			"14,158"	 98.75%		Kalan  Haywood			Democrat
+								129 W. BROWN STREET			
+								MILWAUKEE WI 53212			
+					179	 1.25%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 17							Total Votes:	"21,412"
+											
+		Winner			"17,966"	 83.91%		Supreme  Moore Omokunde			Democrat
+								2629 N 59TH ST			
+								MILWAUKEE WI 53210			
+					"3,410"	 15.93%		Abie Eisenbach			Republican
+								3361 N 54TH ST			
+								MILWAUKEE WI 53216			
+					36	 .17%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 18							Total Votes:	"17,578"
+											
+		Winner			"17,306"	 98.45%		Evan  Goyke			Democrat
+								2734 W STATE STREET			
+								MILWAUKEE WI 53208			
+					272	 1.55%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 19							Total Votes:	"24,622"
+											
+		Winner			"24,193"	 98.26%		Ryan  Clancy			Democrat
+								2543 S HOWELL AVE			
+								MILWAUKEE WI 53207			
+					429	 1.74%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 20							Total Votes:	"26,936"
+											
+		Winner			"17,863"	 66.32%		Christine M.  Sinicki			Democrat
+								3132 S INDIANA AVE			
+								MILWAUKEE WI 53207			
+					"9,043"	 33.57%		Scott Hermann			Republican
+								3151 S. California Street			
+								Milwaukee WI 53207			
+					30	 .11%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 21							Total Votes:	"25,309"
+											
+					"11,580"	 45.75%		Nathan M Jurowski			Democrat
+								729 Monroe Avenue			
+								South Milwaukee WI 53172			
+		Winner			"13,712"	 54.18%		Jessie Rodriguez			Republican
+								6633 S. CRANE DRIVE			
+								OAK CREEK WI 53154			
+					17	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 22							Total Votes:	"34,512"
+											
+					"12,210"	 35.38%		Matt Brown			Democrat
+								N54W21609 Logan Drive			
+								Menomonee Falls WI 53051-6246			
+		Winner			"22,278"	 64.55%		Janel Brandtjen			Republican
+								N52W16632 OAK RIDGE TRL			
+								MENOMONEE FALLS WI 53051			
+					24	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 23							Total Votes:	"33,853"
+											
+		Winner			"21,236"	 62.73%		Deb  Andraca			Democrat
+								4707 N. CUMBERLAND BLVD.			
+								WHITEFISH BAY WI 53211			
+					"12,589"	 37.19%		Purnima  Nath			Republican
+								6155 W VILLA LN			
+								BROWN DEER WI 53223			
+					28	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 24							Total Votes:	"31,725"
+											
+					"12,311"	 38.81%		Bob  Tatterson			Democrat
+								4250 Solvang Lane			
+								Mequon WI 53092			
+		Winner			"19,397"	 61.14%		Dan  Knodl			Republican
+								N101 W14475 RIDGEFIELD CT			
+								GERMANTOWN WI 53022			
+					17	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 25							Total Votes:	"19,919"
+											
+		Winner			"19,344"	 97.11%		Paul Tittl			Republican
+								2229 RHEAUME ROAD			
+								MANITOWOC WI 54220			
+					575	 2.89%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 26							Total Votes:	"25,574"
+											
+					"9,492"	 37.12%		Lisa Salgado			Democrat
+								931 N. 4th St			
+								Sheboygan WI 53081			
+		Winner			"16,061"	 62.8%		Terry A. Katsma			Republican
+								705 ERIE AVE			
+								OOSTBURG WI 53070			
+					21	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 27							Total Votes:	"26,599"
+											
+		Winner			"17,132"	 64.41%		Amy  Binsfeld			Republican
+								W1648 SANTANA DR			
+								SHEBOYGAN WI 53083			
+					"9,373"	 35.24%		Chet Gerlach			Independent
+								618 OTTO LN			
+								ELKHART LAKE WI 53020			
+					94	 .35%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 28							Total Votes:	"26,397"
+											
+					"9,901"	 37.51%		Patty Schachtner			Democrat
+								1064 210 AVE			
+								SOMERSET WI 54025			
+		Winner			"16,494"	 62.48%		Gae Magnafici			Republican
+								744 200TH ST			
+								DRESSER WI 54009			
+					2	 .01%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 29							Total Votes:	"23,848"
+											
+					"9,523"	 39.93%		Danielle  Johnson			Democrat
+								1575 150TH ST			
+								NEW RICHMOND WI 54017			
+		Winner			"14,321"	 60.05%		Clint Moses			Republican
+								N6602 470TH			
+								MENOMONIE WI 54751			
+					4	 .02%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 30							Total Votes:	"30,301"
+											
+					"12,557"	 41.44%		Sarah  Yacoub			Democrat
+								81 LOCKWOOD COURT			
+								HUDSON WI 54016			
+		Winner			"17,719"	 58.48%		Shannon  Zimmerman			Republican
+								429 JEFFERSON ST			
+								RIVER FALLS WI 54022			
+					25	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 31							Total Votes:	"24,858"
+											
+					"10,134"	 40.77%		Brienne  Brown			Democrat
+								156 N. Fremont St.			
+								Whitewater WI 53190			
+		Winner			"14,704"	 59.15%		Ellen Schutt			Republican
+								429 ARTHUR DR			
+								CLINTON WI 53525			
+					20	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 32							Total Votes:	"25,053"
+											
+					"9,269"	 37%		Adam  Jaramillo			Democrat
+								350 W GENEVA ST			
+								WILLIAMS BAY WI 53191			
+		Winner			"15,757"	 62.89%		Tyler  August			Republican
+								943 CUMBERLAND TRAIL			
+								LAKE GENEVA WI 53147			
+					27	 .11%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 33							Total Votes:	"27,202"
+											
+					"13,462"	 49.49%		Don  Vruwink			Democrat
+								24 W ASH LANE			
+								MILTON WI 53563			
+		Winner			"13,709"	 50.4%		Scott Johnson			Republican
+								N3043 HAAS RD			
+								JEFFERSON WI 53549			
+					31	 .11%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 34							Total Votes:	"32,386"
+											
+					"12,373"	 38.2%		Eileen Daniel			Democrat
+								221 PLEASANT ST			
+								RHINELANDER WI 54501			
+		Winner			"20,004"	 61.77%		Rob Swearingen			Republican
+								4485 OAKVIEW LN			
+								RHINELANDER WI 54501			
+					9	 .03%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 35							Total Votes:	"27,913"
+											
+		Winner			"19,481"	 69.79%		Calvin  Callahan			Republican
+								N11910 COUNTY ROAD CC			
+								TOMAHAWK WI 54487			
+					"8,403"	 30.1%		Todd Frederick			Independent
+								1101 N MILL ST N MILL STREET			
+								MERRILL WI 54452			
+					29	 .1%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 36							Total Votes:	"27,980"
+											
+					"8,262"	 29.53%		Ben Murray			Democrat
+								W6768 Beech Rd			
+								Porterfield WI 54159			
+		Winner			"19,698"	 70.4%		Jeffrey Mursau			Republican
+								4 OAK STREET			
+								CRIVITZ WI 54114			
+					20	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 37							Total Votes:	"27,509"
+											
+					"12,154"	 44.18%		Maureen McCarville			Democrat
+								513 FLAMBEAU PKWY			
+								DEFOREST WI 53532			
+		Winner			"15,343"	 55.77%		William Penterman			Republican
+								247 S Water St			
+								Columbus WI 53925			
+					12	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 38							Total Votes:	"22,464"
+											
+		Winner			"21,399"	 95.26%		Barbara Dittrich			Republican
+								380 YOSEMITE RD			
+								OCONOMOWOC WI 53066			
+					"1,065"	 4.74%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 39							Total Votes:	"20,775"
+											
+		Winner			"20,284"	 97.64%		Mark L Born			Republican
+								135 Franklin St			
+								Beaver Dam WI 53916-2211			
+					412	 1.98%		Steve Rydzewski (write-in)			Republican
+											
+								  			
+					79	 .38%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 40							Total Votes:	"25,716"
+											
+		Winner			"19,361"	 75.29%		Kevin Petersen			Republican
+								N1433 DRIVAS ROAD			
+								WAUPACA WI 54981			
+					"6,296"	 24.48%		Henry Fries			Independent
+								E2449 E OLD MILL RUN			
+								WAUPACA WI 54981			
+					59	 .23%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 41							Total Votes:	"19,339"
+											
+		Winner			"18,736"	 96.88%		Alex Dallman			Republican
+								820 SUNNYSIDE ROAD UNIT 13			
+								GREEN LAKE WI 54941			
+					603	 3.12%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 42							Total Votes:	"27,595"
+											
+					"10,969"	 39.75%		Theresa Valencia			Democrat
+								W10209 COUNTY ROAD K			
+								LODI WI 53555			
+		Winner			"16,608"	 60.18%		Jon  Plumer			Republican
+								W11404 HIGH POINT ROAD			
+								LODI WI 53555			
+					18	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 43							Total Votes:	"31,610"
+											
+		Winner			"19,681"	 62.26%		Jenna  Jacobson			Democrat
+								124 ASH ST			
+								OREGON WI 53575			
+					"11,903"	 37.66%		Marisa  Voelkel			Republican
+								2547 N BURDICK RD			
+								JANESVILLE WI 53548			
+					26	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 44							Total Votes:	"22,730"
+											
+		Winner			"14,192"	 62.44%		Sue Conley			Democrat
+								202 HILLSIDE CT			
+								JANESVILLE WI 53545			
+					"8,524"	 37.5%		Spencer  Zimmerman			Republican
+								462 S. RANDALL AVE #3			
+								JANESVILLE WI 53545			
+					14	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 45							Total Votes:	"20,872"
+											
+		Winner			"11,636"	 55.75%		Clinton  Anderson			Democrat
+								921 Cleveland Street			
+								Beloit WI 53511			
+					"9,221"	 44.18%		Jeff Klett			Republican
+								1980 BOULDER LN			
+								BELOIT WI 53511			
+					15	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 46							Total Votes:	"29,735"
+											
+		Winner			"20,710"	 69.65%		Melissa  Ratcliff			Democrat
+								242 Forreston Drive			
+								Cottage Grove WI 53527			
+					"9,001"	 30.27%		Andrew McKinney			Republican
+								4574 AMERICAN WAY			
+								COTTAGE GROVE WI 53527			
+					24	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 47							Total Votes:	"29,842"
+											
+		Winner			"23,843"	 79.9%		Jimmy  Anderson			Democrat
+								5807 VERDE VIEW RD.			
+								FITCHBURG WI 53711			
+					"5,975"	 20.02%		Lamonte Newsom			Republican
+								1025 S SUNNYVALE LN C			
+								MADISON WI 53713			
+					24	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 48							Total Votes:	"27,518"
+											
+		Winner			"27,089"	 98.44%		Samba  Baldeh			Democrat
+								5150 CRESCENT OAKS DR			
+								MADISON WI 53704			
+					429	 1.56%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 49							Total Votes:	"23,369"
+											
+					"8,725"	 37.34%		Lynne Parrott			Democrat
+								980 JACKSON ST			
+								PLATTEVILLE WI 53818			
+		Winner			"14,626"	 62.59%		Travis  Tranel			Republican
+								2231 LOUISBURG ROAD			
+								CUBA CITY WI 53807			
+					18	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 50							Total Votes:	"24,042"
+											
+					"8,524"	 35.45%		Michael  Leuth			Democrat
+								E. 7257 N Oakcrest Dr.			
+								Reedsburg WI 53959			
+		Winner			"15,514"	 64.53%		Tony  Kurtz			Republican
+								W9648 GEHRI RD			
+								WONEWOC WI 53968			
+					4	 .02%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 51							Total Votes:	"26,320"
+											
+					"11,546"	 43.87%		Leah  Spicer			Democrat
+								7080 LEACHES CROSSING RD			
+								AVOCA WI 53506			
+		Winner			"14,760"	 56.08%		Todd Novak			Republican
+								202 W Division St			
+								Dodgeville WI 53533-0002			
+					14	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 52							Total Votes:	"24,179"
+											
+					"9,108"	 37.67%		Joe  Lavrenz			Democrat
+								280 N SEYMOUR ST APT J204			
+								FOND DU LAC WI 54935			
+		Winner			"15,055"	 62.26%		Jerry L. O'Connor			Republican
+								N5964 JOSEPH CT			
+								FOND DU LAC WI 54937			
+					16	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 53							Total Votes:	"20,829"
+											
+		Winner			"20,336"	 97.63%		Michael  Schraa			Republican
+								2834 COUNTY RD FF			
+								OSHKOSH WI 54904			
+					493	 2.37%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 54							Total Votes:	"22,538"
+											
+		Winner			"12,124"	 53.79%		Lori Palmeri			Democrat
+								212 W PARKWAY AVE			
+								OSHKOSH WI 54901			
+					"10,382"	 46.06%		Donnie Herman			Republican
+								2164 SCHNEIDER AVE			
+								OSHKOSH WI 54904			
+					32	 .14%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 55							Total Votes:	"27,686"
+											
+					"12,571"	 45.41%		Stefanie A. Holt			Democrat
+								418 PARK DR			
+								NEENAH WI 54956			
+		Winner			"15,098"	 54.53%		Nate  Gustafson			Republican
+								1820 County Road II Apt 27			
+								Neenah WI 54956			
+					17	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 56							Total Votes:	"28,585"
+											
+					"11,710"	 40.97%		Patrick Hayden			Democrat
+								325 E TIMBERLINE DR			
+								APPLETON WI 54913			
+		Winner			"16,875"	 59.03%		Dave Murphy			Republican
+								N1777 IVY LANE			
+								GREENVILLE WI 54942			
+					0	0%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 57							Total Votes:	"22,871"
+											
+		Winner			"13,577"	 59.36%		Lee  Snodgrass			Democrat
+								"415 S. OLDE ONEIDA STREET, APT. 204"			
+								APPLETON WI 54911			
+					"9,282"	 40.58%		Andrew Fox			Republican
+								155 MARINA PL APT. 202			
+								MENASHA WI 54952			
+					12	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 58							Total Votes:	"30,428"
+											
+					"9,047"	 29.73%		Mary Ann  Rzeszutek			Democrat
+								1069 Timberline Drive			
+								West Bend WI 53095-4533			
+		Winner			"21,381"	 70.27%		Rick  Gundrum			Republican
+								301 WINTER LANE			
+								SLINGER WI 53086			
+					0	0%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 59							Total Votes:	"25,881"
+											
+		Winner			"25,716"	 99.36%		Ty Bodden			Republican
+								419 N MILITARY ROAD			
+								HILBERT WI 54129			
+					165	 .64%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 60							Total Votes:	"33,061"
+											
+					"11,636"	 35.2%		Daniel E. Larsen			Democrat
+								289 Huntington Drive			
+								Cedarburg WI 53012			
+		Winner			"21,396"	 64.72%		Robert Brooks			Republican
+								204 E DEKORA ST			
+								SAUKVILLE WI 53080			
+					29	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 61							Total Votes:	"27,408"
+											
+					"9,851"	 35.94%		Max Winkels			Democrat
+								8635 368TH AVE			
+								BURLINGTON WI 53105			
+		Winner			"17,542"	 64%		Amanda  Nedweski			Republican
+								3814 - 114th Pl			
+								Pleasant Prairie WI 53158			
+					15	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 62							Total Votes:	"29,719"
+											
+					"11,445"	 38.51%		Anthony  Hammes			Democrat
+								825 WATERS EDGE RD			
+								RACINE WI 53402			
+		Winner			"18,236"	 61.36%		Robert Wittke			Republican
+								11 SANDALWOOD COURT			
+								RACINE WI 53402			
+					38	 .13%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 63							Total Votes:	"23,262"
+											
+		Winner			"16,977"	 72.98%		Robin  Vos			Republican
+								960 ROCK RIDGE RD			
+								BURLINGTON WI 53105			
+					"2,112"	 9.08%		Adam Steen (write-in)			Republican
+											
+								  			
+					"3,495"	 15.02%		Joel Jacobsen (write-in)			Democrat
+											
+								  			
+					678	 2.91%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 64							Total Votes:	"22,690"
+											
+		Winner			"12,873"	 56.73%		Tip McGuire			Democrat
+								2580 18TH ST #8			
+								KENOSHA WI 53140			
+					"9,799"	 43.19%		Ed Hibsch			Republican
+								866 Sheridan Rd			
+								Kenosha WI 53140-1149			
+					18	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 65							Total Votes:	"17,863"
+											
+		Winner			"11,035"	 61.78%		Tod Ohnstad			Democrat
+								3814 18TH AVENUE			
+								KENOSHA WI 53140			
+					"6,803"	 38.08%		Frank  Petrick			Republican
+								6421 Sheridan rd.			
+								Kenosha WI 53143			
+					25	 .14%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 66							Total Votes:	"14,765"
+											
+		Winner			"11,261"	 76.27%		Greta Neubauer			Democrat
+								2000 N WISCONSIN ST			
+								RACINE WI 53402			
+					"3,338"	 22.61%		Carl  Hutton			Libertarian
+								1325 HAYES AVE			
+								RACINE WI 53405			
+					166	 1.12%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 67							Total Votes:	"26,709"
+											
+					"9,807"	 36.72%		Jason D. Bennett			Democrat
+								902 MACOMBER ST			
+								CHIPPEWA FALLS WI 54729			
+		Winner			"16,889"	 63.23%		Rob Summerfield			Republican
+								812 THOMPSON ST			
+								BLOOMER WI 54724			
+					13	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 68							Total Votes:	"23,627"
+											
+					"9,273"	 39.25%		Nate Otto			Democrat
+								2220 LYNN AVE			
+								ALTOONA WI 54720			
+		Winner			"14,338"	 60.68%		Karen Hurd			Republican
+								"835 S. Liberty Street, Apt 14"			
+								Fall Creek WI 54742			
+					16	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 69							Total Votes:	"23,389"
+											
+					"8,345"	 35.68%		Lisa Boero			Democrat
+								500 N SCHMIDT AVE			
+								MARSHFIELD WI 54449			
+		Winner			"15,032"	 64.27%		Donna M. Rozar			Republican
+								711 West Blodgett Street			
+								Marshfield WI 54449-1808			
+					12	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 70							Total Votes:	"25,542"
+											
+					"8,669"	 33.94%		Remy Gomez			Democrat
+								1808 GOODLAND AVE			
+								TOMAH WI 54660			
+		Winner			"16,856"	 65.99%		Nancy Lynn VanderMeer			Republican
+								18940 EDEN AVE			
+								TOMAH WI 54660			
+					17	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 71							Total Votes:	"27,923"
+											
+		Winner			"15,930"	 57.05%		Katrina  Shankland			Democrat
+								2045 CENTER ST			
+								STEVENS POINT WI 54481			
+					"11,976"	 42.89%		Scott Soik			Republican
+								415 W RIVER DR W			
+								STEVENS POINT WI 54481			
+					17	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 72							Total Votes:	"26,511"
+											
+					"10,027"	 37.82%		Criste  Greening			Democrat
+								6451 OAK ST			
+								WISCNOSIN RAPIDS WI 54494			
+		Winner			"16,473"	 62.14%		Scott S. Krug			Republican
+								1551 KINGSWOOD TRAIL			
+								NEKOOSA WI 54457			
+					11	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 73							Total Votes:	"26,101"
+											
+					"12,778"	 48.96%		Laura R. Gapske			Democrat
+								1913 E 7th Street			
+								Superior WI 54880-3577			
+		Winner			"13,268"	 50.83%		Angie Sapik			Republican
+								11683 E POINT RD			
+								LAKE NEBAGAMON WI 54849			
+					55	 .21%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 74							Total Votes:	"30,293"
+											
+					"14,276"	 47.13%		John Adams			Democrat
+								30900 COUNTY HIGHWAY C			
+								WASHBURN WI 54891			
+		Winner			"16,006"	 52.84%		Chanz Green			Republican
+								"26595 Altamont Rd Masen, WI 54856"			
+								  			
+					11	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 75							Total Votes:	"21,469"
+											
+		Winner			"20,730"	 96.56%		David Armstrong			Republican
+								11 PHIPPS AVE			
+								RICE LAKE WI 54868			
+					739	 3.44%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 76							Total Votes:	"28,154"
+											
+		Winner			"27,702"	 98.39%		Francesca  Hong			Democrat
+								"101 N Blount St, #801"			
+								Madison WI 53703			
+					452	 1.61%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 77							Total Votes:	"28,205"
+											
+		Winner			"27,839"	 98.7%		Shelia  Stubbs			Democrat
+								4 WAUNONA WOODS CT #111			
+								MADISON WI 53713			
+					366	 1.3%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 78							Total Votes:	"32,696"
+											
+		Winner			"26,817"	 82.02%		Lisa B. Subeck			Democrat
+								"818 S. GAMMON RD., UNIT 4"			
+								MADISON WI 53719			
+					"5,845"	 17.88%		Matt  Neuhaus			Republican
+								740 POPLAR WAY			
+								VERONA WI 53593			
+					34	 .1%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 79							Total Votes:	"33,015"
+											
+		Winner			"24,469"	 74.11%		Alex  Joers			Democrat
+								703 CRICKET LN UNIT 3			
+								MIDDLETON WI 53562			
+					"8,514"	 25.79%		Victoria Fueger			Republican
+								1111 CENTENNIAL PARKWAY			
+								WAUNAKEE WI 53597			
+					32	 .1%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 80							Total Votes:	"33,563"
+											
+		Winner			"23,380"	 69.66%		Mike  Bare			Democrat
+								543 Harvest Lane			
+								Verona WI 53593			
+					"10,156"	 30.26%		Jacob D. Luginbuhl			Republican
+								2157 Sugar River Road			
+								Verona WI 53593			
+					27	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 81							Total Votes:	"29,695"
+											
+		Winner			"17,490"	 58.9%		David  Considine			Democrat
+								N6194 BREEZY HILL ROAD			
+								BARABOO WI 53913			
+					"12,192"	 41.06%		Shellie Benish			Republican
+								N2137 Lake Dr.			
+								Lodi WI 53555			
+					13	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 82							Total Votes:	"29,442"
+											
+					"12,715"	 43.19%		Deborah Davis			Democrat
+								9460 S 96th Street			
+								Franklin WI 53132			
+		Winner			"16,705"	 56.74%		Chuck Wichgers			Republican
+								W156 S7388 QUIETWOOD DR.			
+								MUSKEGO WI 53150			
+					0	0%		Zachary Roper (write-in)			Independent
+											
+								  			
+					22	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 83							Total Votes:	"30,730"
+											
+		Winner			"24,153"	 78.6%		Nik Rettinger			Republican
+								149 SHORE DR			
+								MUKWONAGO WI 53149			
+					"6,410"	 20.86%		Chaz  Self			Independent
+								w2716 Friemoth Road			
+								East Troy WI 53120			
+					167	 .54%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 84							Total Votes:	"25,849"
+											
+					"12,653"	 48.95%		Lu Ann Bird			Democrat
+								5155 Brandons Ct			
+								Hales Corners WI 53130-1082			
+		Winner			"13,179"	 50.98%		Bob  Donovan			Republican
+								5302 WOODBRIDGE LN S			
+								GREENFIELD WI 53221			
+					17	 .07%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 85							Total Votes:	"24,358"
+											
+					"10,659"	 43.76%		Kristin  Conway			Democrat
+								222 RADTKE ST			
+								SCHOFIELD WI 54476			
+		Winner			"13,689"	 56.2%		Patrick Snyder			Republican
+								129 EAST CHARLES STREET			
+								SCHOFIELD WI 54476			
+					10	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 86							Total Votes:	"22,876"
+											
+		Winner			"22,224"	 97.15%		John  Spiros			Republican
+								1406 E. FILLMORE			
+								MARSHFIELD WI 54449			
+					652	 2.85%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 87							Total Votes:	"26,667"
+											
+					"8,127"	 30.48%		Elizabeth  Riley			Democrat
+								16026 W 4TH STREET			
+								HAYWARD WI 54843			
+		Winner			"18,532"	 69.49%		James W. Edming			Republican
+								N4998 EDMING ROAD			
+								GLEN FLORA WI 54526			
+					8	 .03%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 88							Total Votes:	"24,854"
+											
+					"10,384"	 41.78%		Hannah Beauchamp-Pope			Democrat
+								2750 S FALCON HILL WAY			
+								GREEN BAY WI 54302			
+		Winner			"14,451"	 58.14%		John Macco			Republican
+								1874 OLD VALLEY ROAD			
+								DE PERE WI 54301			
+					19	 .08%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 89							Total Votes:	"26,329"
+											
+					"8,800"	 33.42%		Jane Benson			Democrat
+								3672 Hallers Creek Road			
+								Suamico WI 54313-8419			
+		Winner			"17,514"	 66.52%		Elijah  Behnke			Republican
+								4761 COUNTY ROAD J			
+								OCONTO WI 54153			
+					15	 .06%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 90							Total Votes:	"16,725"
+											
+		Winner			"9,885"	 59.1%		Kristina Shelton			Democrat
+								1045 S WEBSTER AVE			
+								GREEN BAY WI 54301			
+					"6,818"	 40.77%		Micah J. Behnke			Republican
+								823 Crooks St			
+								Green Bay WI 54301			
+					22	 .13%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 91							Total Votes:	"25,484"
+											
+		Winner			"16,465"	 64.61%		Jodi Emerson			Democrat
+								519 CHAUNCEY ST			
+								EAU CLAIRE WI 54701			
+					"8,995"	 35.3%		Josh Stanley			Republican
+								1910 DONALD AVE			
+								EAU CLAIRE WI 54701			
+					24	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 92							Total Votes:	"24,746"
+											
+					"9,053"	 36.58%		Maria Bamonti			Democrat
+								W490 COUNTY ROAD Z			
+								MONDOVI WI 54755			
+		Winner			"15,680"	 63.36%		Treig E. Pronschinske			Republican
+								559 N JACKSON STREET			
+								MONDOVI WI 54755			
+					13	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 93							Total Votes:	"26,786"
+											
+					"10,775"	 40.23%		Alison H. Page			Democrat
+								430 Crescent Street			
+								River Falls WI 54022-2622			
+		Winner			"16,003"	 59.74%		Warren L.  Petryk			Republican
+								239 CORYDON ROAD			
+								EAU CLAIRE WI 54701			
+					8	 .03%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 94							Total Votes:	"28,907"
+											
+		Winner			"14,826"	 51.29%		Steve  Doyle			Democrat
+								N5525 HAUSER RD			
+								ONALASKA WI 54650			
+					"14,070"	 48.67%		Ryan Huebsch			Republican
+								9522 E 16 Frontage Rd Apt. 206			
+								Onalaska WI 54650			
+					11	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 95							Total Votes:	"25,285"
+											
+		Winner			"16,897"	 66.83%		Jill Billings			Democrat
+								1403 JOHNSON ST			
+								LA CROSSE WI 54601			
+					"8,366"	 33.09%		Chris  Woodard			Republican
+								513 Ferry Street			
+								La Crosse WI 54601			
+					22	 .09%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 96							Total Votes:	"25,308"
+											
+					"10,483"	 41.42%		Jayne M. Swiggum			Democrat
+								50272 OLD GAYS RD			
+								GAYS MILLS WI 54631			
+		Winner			"14,814"	 58.53%		Loren Oldenburg			Republican
+								E4299 COUNTY RD Y			
+								VIROQUA WI 54665			
+					11	 .04%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 97							Total Votes:	"21,521"
+											
+		Winner			"20,691"	 96.14%		Scott Allen			Republican
+								3731 STILLWATER CT			
+								WAUKESHA WI 53189			
+					830	 3.86%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 98							Total Votes:	"27,757"
+											
+					"11,304"	 40.72%		Christina  Barry			Democrat
+								W222N2528 GLENWOOD LN			
+								WAUKESHA WI 53186			
+		Winner			"16,439"	 59.22%		Adam  Neylon			Republican
+								1357 LAKE PARK CT.			
+								PEWAUKEE WI 53072			
+					14	 .05%		SCATTERING			
+											
+											
+	Office		REPRESENTATIVE TO THE ASSEMBLY DISTRICT 99							Total Votes:	"34,791"
+											
+					"10,558"	 30.35%		Alec Thomas Dahms			Democrat
+								1028 Wellington Way			
+								Hartland WI 53029-2706			
+		Winner			"24,196"	 69.55%		Cindi  Duchow			Republican
+								N22 W28692 LOUIS AVENUE			
+								PEWAUKEE WI 53072			
+					37	 .11%		SCATTERING			
+											
+											
+											
