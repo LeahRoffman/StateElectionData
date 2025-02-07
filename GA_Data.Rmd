@@ -222,6 +222,57 @@ county_district_key3 <- drop_na(county_district_key3)
 ```
 
 
+# Clean elections data 
+
+```{r}
+# Separate names from parties 
+party_list <- list()
+
+for (i in 1:nrow(data["choice.name"])) {
+  
+  name <- data["choice.name"][i,]
+  data["choice.name"][i,] <- unlist(str_split(name, "[(]"))[1]
+  party_list[i] <- str_extract(name, "[ ]\\(.*")
+  
+  #unlist(str_split(name, "[(]"))[2]
+}
+
+
+# Make candidate party 
+data["Candidate_party"] <- unlist(party_list)
+
+# Make candidate party standard 
+data <- data %>% 
+  mutate(Candidate_party = case_when(grepl("Rep", Candidate_party)==T ~"REP", 
+                                            grepl("Dem", Candidate_party)==T ~"DEM",
+                                            grepl("Lib", Candidate_party)==T~"LIB",
+                                            grepl("Dem", Candidate_party)==F & grepl("Rep",
+                                                                                    Candidate_party)==F & grepl("Lib", Candidate_party)==F~"OTE"))
+```
+
+
+
+```{r}
+# Rename columns 
+data <- data %>% rename(Contest_name = contest.name, 
+                        Candidate_name = choice.name)
+```
+
+
+```{r}
+# Make Contest_name standard - remove the "Vote for 1" section
+data["Contest_name"] <- 
+  unlist(lapply(data["Contest_name"], function(x) str_remove(x, "[ ]\\(.*"))[[1]]) 
+```
+
+
+```{r}
+# Select choice columns
+data <- data %>% 
+  select(Contest_name, Candidate_name, Candidate_party)
+
+```
+
 
 
 
