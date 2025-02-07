@@ -274,6 +274,207 @@ data <- data %>%
 ```
 
 
+# Make County Keys
+
+## - State house races 
+```{r}
+# Required: county_district_key, data 
+
+## Subset election data to state house races
+  state_house_races <- data %>% select(Contest_name) %>% unique() %>% 
+    filter(grepl("State House", Contest_name)==T) %>% pull()
+
+
+## Make a contest-district key 
+  ckey1 <- data.frame(Contest_name = state_house_races, 
+                   District_name = as.vector(sapply(state_house_races, function(x)
+                     str_extract_all(x, "([0-9]+)")[[1]][1])))
+
+## Join the contest-district key to the county-district key
+  state_house_key <- left_join(ckey1, county_district_key, by = "District_name")
+
+```
+
+
+
+
+
+## - State Senate races 
+```{r}
+# Required: county_district_key2, data
+
+## Subset election data to state house races
+  state_senate_races <- data %>% select(Contest_name) %>% unique() %>% 
+    filter(grepl("State Senate", Contest_name)==T) %>% pull()
+
+## Make a contest-district key 
+  ckey2 <- data.frame(Contest_name = state_senate_races, 
+                   District_name = as.vector(sapply(state_senate_races, function(x)
+                     str_extract_all(x, "([0-9]+)")[[1]][1])))
+
+## Join the contest-district key to the county-district key
+  state_senate_key <- left_join(ckey2, county_district_key2, by = "District_name")
+
+```
+
+
+## - Congressional races 
+```{r}
+# Required: county_district_key3, data
+
+## Subset election data to state house races
+  state_congress_races <- data %>% select(Contest_name) %>% unique() %>% 
+    filter(grepl("US House", Contest_name)==T) %>% pull()
+
+## Make a contest-district key 
+  ckey3 <- data.frame(Contest_name = state_congress_races, 
+                   District_name = as.vector(sapply(state_senate_races, function(x)
+                     str_extract_all(x, "([0-9]+)")[[1]][1])))
+
+
+## Join the contest-district key to the county-district key
+  state_congress_key <- left_join(ckey3, county_district_key3, by = "District_name")
+
+```
+
+
+
+## - District Attorney cases 
+
+```{r}
+state_district_races <- data %>% select(Contest_name) %>% 
+  filter(grepl("District Attorney", Contest_name)==T) %>% unique() %>% pull()
+```
+
+
+```{r}
+# SOURCE TO MANUALLY FILL IN COUNTIES 
+## https://gapubdef.org/store-category/offices-by-judicial-circuit/ 
+
+# Waycross - 1st 
+  Waycross <- toupper(str_split("Bacon, Brantley, Charlton, Coffee, Pierce, Ware", ", ")[[1]])
+
+# Atlantic - 1st 
+  Atlantic <- toupper(str_split("Bryan, Evans, Liberty, Long, McIntosh, Tattnall", ", ")[[1]])
+
+# Alapaha - 2nd 
+  Alapaha <- toupper(str_split("Atkinson, Berrien, Clinch, Cook, Lanier", ", ")[[1]])
+
+# Pataula - 2nd 
+  Pataula <- toupper(str_split("Clay, Early, Miller, Quitman, Randolph, Seminole, Terrell", ", ")[[1]])
+
+# Cherokee - 7th 
+  Cherokee <- toupper(str_split("Bartow, Gordon", ", ")[[1]])
+
+# Columbia - 
+  Columbia <- toupper(str_split("Columbia", ", ")[[1]])
+
+# Cordele - 8th
+  Cordele <- toupper(str_split("Ben Hill, Crisp, Dooly, Wilcox", ", ")[[1]])
+
+# Enotah - 9th 
+  Enotah <- toupper(str_split("Lumpkin, Towns, Union, White", ", ")[[1]])
+
+# Northeastern - 9th
+  Northeastern <- toupper(str_split("Dawson, Hall", ", ")[[1]])
+
+# Paulding - 7th
+  Paulding <- toupper(str_split("Paulding", ", ")[[1]])
+
+# Rockdale - 4th
+  Rockdale <- toupper(str_split("Rockdale", ", ")[[1]])
+
+```
+
+
+```{r}
+# Make a Contest-County key 
+
+## Required: state_district_races
+
+circuit_list <- list()
+county_list <- list()
+
+for (i in 1:length(state_district_races)) {
+  
+  circuit <- state_district_races[i]
+  circuit <- str_remove(circuit, "District Attorney")
+  circuit <- str_remove(circuit, "Judicial Circuit")
+  circuit <- str_remove(circuit, "-")
+  circuit <- str_trim(circuit)
+  
+  clist <- eval(parse(text = circuit)) # Evaluate the variables generated in block above -- names match up with circuits
+  num <- length(clist)
+  
+  circuit_list <- append(circuit_list, rep(state_district_races[i], num)) # Repeat Contest_name for each county 
+  county_list <- append(county_list, clist) # Append counties 
+  
+}
+
+
+# County - Office key for Congressional offices 
+state_district_key <- data.frame(County_name = unlist(county_list),
+                               Contest_name = unlist(circuit_list))
+
+```
+
+
+## - Statewide races 
+
+```{r}
+# Get list of all counties 
+GA_counties <- state_congress_key %>% select(County_name) %>% unique() %>% pull()
+
+# Filter for statewide races 
+statewideraces <- data %>% select(Contest_name) %>% unique() %>% 
+    filter(!(Contest_name %in% state_congress_races) & 
+           !(Contest_name %in% state_senate_races) & 
+           !(Contest_name %in% state_house_races)) %>% 
+    filter(grepl("District", Contest_name)==F & 
+           grepl("Amendment", Contest_name)==F & 
+           grepl("Referendum", Contest_name)==F) %>% pull()
+
+```
+
+
+```{r}
+office_list <- list()
+
+# Repeat counties for each statewide race 
+  for (i in 1:length(statewideraces)) {
+    office_list <- append(office_list, rep(statewideraces[i],length(GA_counties)))
+  }
+
+# County - Office key for Congressional offices 
+  statewide_office_key <- 
+    data.frame(Contest_name = unlist(office_list),
+               County_name = rep(GA_counties,
+                                 length(statewideraces)))
+```
+
+
+
+## RBind keys 
+
+```{r}
+# Required: statewide_office_key, state_congress_key, state_senate_key, state_house_key
+
+## Get rid of district number if needed
+state_congress_key <- state_congress_key %>%
+  select(-District_name)
+state_senate_key <- state_senate_key %>% 
+  select(-District_name)
+state_house_key <- state_house_key %>% 
+  select(-District_name)
+
+## RBind all the keys
+county_key <- rbind(state_congress_key, state_senate_key, state_house_key, statewide_office_key, state_district_key)
+
+```
+
+
+
+
 
 
 
