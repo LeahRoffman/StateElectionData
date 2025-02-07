@@ -1,0 +1,230 @@
+---
+title: "GA_Elections"
+output: html_document
+date: "2025-02-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Load Libraries 
+
+```{r}
+library(tidyverse)
+library(tidyr)
+library(readxl)
+library(stringr)
+library(pdftools)
+```
+
+
+# Define functions
+```{r}
+cleanpage <- function(page) {
+  ## This function takes a list of data from a page of a pdf and indexes 
+  ## the list to the desired data 
+  # Inputs: 
+    ## page = a page from a pdf parsed as a list of vectors 
+  # Output 
+    ## The data indexed to start at the line below the variable names and ending before text
+  
+  n <- 0
+  m <- 0
+  
+  for (i in 1:length(page)) {
+    
+    
+    val <- grepl("County", page[i])
+     
+    if(val) { 
+      n <- i+1
+      #print(n)
+      
+    }
+    
+    
+    val2 <- grepl("Report prepared", page[i])
+    if(val2) { 
+      m <- i-1
+      #print(m)
+      
+    }
+  }
+  
+  #print(paste(n," ",m))
+  return(page[n:m])
+}
+```
+
+
+
+# Load data 
+
+## - Elections data 
+
+```{r}
+#getwd()
+path <- "./GA_2022Nov.csv"
+data <- read.csv(path)
+
+```
+
+
+## - County data 
+
+"County Data" Source: https://www.legis.ga.gov/joint-office/reapportionment 
+- Downloaded pdfs containing *2021* data on the state senate, state house, and congressional districts contained by each county in Georgia.
+
+According to this *Article*, the 2021 maps were used in the 2022 elections despite being contested in court by pro-democracy groups.
+https://www.democracydocket.com/analysis/nearly-two-years-later-georgias-congressional-map-heads-to-trial/ 
+
+
+Court District sources 
+- https://gapubdef.org/store-category/offices-by-judicial-circuit/  
+- https://www.gasd.uscourts.gov/court-info
+- https://www.southernjudicialcircuit.com/Georgia-Circuits.pdf 
+
+```{r}
+
+path2 <- "./GA_housedistricts_2021.pdf"
+house <- pdf_text(path2)
+
+path3 <- "./GA_senatedistricts_2021.pdf"
+senate <- pdf_text(path3)
+  
+path4 <- "./GA_congressdistricts_2021.pdf"
+congress <- pdf_text(path4)
+
+```
+
+
+# Clean pdf data
+
+## - House Districts 
+```{r}
+# Split into pages
+test <- str_split(house, "\n")
+
+# Apply clean page function 
+for (i in 1:length(test)) {test[[i]] <- cleanpage(test[[i]])}
+
+
+## Test 
+result <- cleanpage(test[[1]])
+
+```
+
+
+```{r}
+
+county_list <- list()
+district_list <- list()
+
+for (i in 1:length(test)) {
+  
+  for (j in 1:length(test[[i]])) {
+    
+    cnty <- str_remove_all(str_extract_all(test[[i]][j], "^\\s*(?:\\S+\\s+)"), " ") # Extract first word from string 
+    dstr <- str_extract_all(test[[i]][j], "([0-9]+)")[[1]][1] # Extract first number from string
+    
+    county_list <- append(county_list, cnty)
+    district_list <- append(district_list, dstr)
+  }
+}
+
+
+county_list <- unlist(county_list)
+district_list <- unlist(district_list)
+```
+
+```{r}
+county_district_key <- data.frame(County_name = county_list, District_name = district_list)
+county_district_key <- drop_na(county_district_key)
+```
+
+
+
+## - Senate Districts
+
+```{r}
+# Split into pages
+sen <- str_split(senate, "\n")
+
+# Apply clean page function 
+for (i in 1:length(sen)) {sen[[i]] <- cleanpage(sen[[i]])}
+
+
+```
+
+```{r}
+county_list2 <- list()
+district_list2 <- list()
+
+for (i in 1:length(sen)) {
+  
+  for (j in 1:length(sen[[i]])) {
+    
+    cnty <- str_remove_all(str_extract_all(sen[[i]][j], "^\\s*(?:\\S+\\s+)"), " ") # Extract first word from string 
+    dstr <- str_extract_all(sen[[i]][j], "([0-9]+)")[[1]][1] # Extract first number from string
+    
+    county_list2 <- append(county_list2, cnty)
+    district_list2 <- append(district_list2, dstr)
+  }
+}
+
+
+county_list2 <- unlist(county_list2)
+district_list2 <- unlist(district_list2)
+
+```
+
+```{r}
+county_district_key2 <- data.frame(County_name = county_list2, District_name = district_list2)
+county_district_key2 <- drop_na(county_district_key2)
+```
+
+## - Congressional Districts
+
+```{r}
+# Split into pages 
+con <- str_split(congress, "\n")
+
+# Apply clean page function 
+for (i in 1:length(con)) {con[[i]] <- cleanpage(con[[i]])}
+```
+
+```{r}
+county_list3 <- list()
+district_list3 <- list()
+
+for (i in 1:length(con)) {
+  
+  for (j in 1:length(con[[i]])) {
+    
+    cnty <- str_remove_all(str_extract_all(con[[i]][j], "^\\s*(?:\\S+\\s+)"), " ") # Extract first word from string 
+    dstr <- str_extract_all(con[[i]][j], "([0-9]+)")[[1]][1] # Extract first number from string
+    
+    county_list3 <- append(county_list3, cnty)
+    district_list3 <- append(district_list3, dstr)
+  }
+}
+
+county_list3 <- unlist(county_list3)
+district_list3 <- unlist(district_list3)
+
+```
+
+```{r}
+county_district_key3 <- data.frame(County_name = county_list3, District_name = district_list3)
+county_district_key3 <- drop_na(county_district_key3)
+```
+
+
+
+
+
+
+
+
