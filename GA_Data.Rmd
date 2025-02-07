@@ -474,6 +474,41 @@ county_key <- rbind(state_congress_key, state_senate_key, state_house_key, state
 
 
 
+# Join all data 
+
+## - Check before join 
+
+```{r}
+# Fix Ben Hill
+county_key <- county_key %>% mutate(County_name = ifelse(County_name == "BEN", "BEN HILL", County_name))
+
+# Find NAs
+sapply(county_key, function(x) sum(is.na(x))) # 51 NAs -- can be deleted 
+
+# Drop 51 NA rows -- from 2288 to 2237 rows 
+county_key <- county_key %>% filter(is.na(County_name)==F)
+
+# Check contests - should be 270 partisan contests total !!!
+check <- county_key %>% select(Contest_name) %>% unique() %>% pull()
+allcontests <- data %>% select(Contest_name) %>% unique() %>% pull()
+
+notincluded <- setdiff(allcontests, check) # 4 contests to not include in the export - amendments and referendums
+
+```
+
+```{r}
+# Drop the not included contests -- AMENDMENTS and REFERENDUMS
+data <- data %>% filter(!(Contest_name %in% notincluded))
+```
+
+
+## - Join
+```{r}
+
+for_export <- left_join(data, county_key, by = "Contest_name")
+
+```
+
 
 
 
