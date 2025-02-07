@@ -510,6 +510,94 @@ for_export <- left_join(data, county_key, by = "Contest_name")
 ```
 
 
+# Export data
+
+
+## - Check before export 
+```{r}
+for_export %>% filter(Contest_name == "Governor") %>% 
+  count(Candidate_party)
+
+for_export %>% filter(Contest_name == "Governor") %>% 
+  count(Candidate_name)
+
+for_export %>% filter(County_name == "BEN HILL")
+
+```
+
+## - Export final data
+
+```{r}
+
+library(googlesheets4)
+
+ss <- gs4_create(
+  "Georgia Election Data",
+  sheets = for_export)
+
+```
+
+## - Export keys 
+
+# Export csvs of all keys 
+
+```{r}
+# State Senate Districts 
+write_csv(state_senate_key, "../Exports/GA_SenDistricts_Key.csv")
+
+# State Representative Districts
+write_csv(state_house_key, "../Exports/GA_RepDistricts_Key.csv")
+
+
+# Congressional representative districts 
+write_csv(state_congress_key, "../Exports/GA_CongressDistricts_Key.csv")
+
+#  District Attorney districts 
+write_csv(state_district_key, "../Exports/GA_AttorneyCircuitDistricts_Key.csv")
+
+# All GA counties 
+write_csv(data.frame(County_name = unique(for_export$County_name)), "../Exports/GA_County_List.csv")
+
+
+```
+
+# Find summary stats
+
+```{r}
+# RESHAPE DATA
+wider <- for_export %>% pivot_wider(id_cols = c(County_name, Contest_name), names_from = Candidate_party, values_from = Candidate_name) 
+
+# UNNEST COLS
+wider <- unnest_wider(wider, DEM, names_sep = "DEM")
+wider <- unnest_wider(wider, REP, names_sep = "REP")
+wider <- unnest_wider(wider, LIB, names_sep = "LIB")
+#wider <- unnest_wider(wider, OTE, names_sep = "OTE")
+
+# Generate Has_dem & Has_Rep
+
+wider <- wider %>% mutate(Has_Dem = ifelse(is.na(DEMDEM1), 0, 1))
+wider <- wider %>% mutate(Has_Rep = ifelse(is.na(REPREP1), 0, 1))
+
+```
+
+
+```{r}
+# Number of unique contests --  270
+wider %>% select(Contest_name) %>% unique() %>% nrow()
+
+# Total w No Democrats -- 78
+wider %>% filter(Has_Dem==0) %>% select(Contest_name) %>% unique() %>% nrow()
+
+# Total w No Republicans -- 57
+wider %>% filter(Has_Rep==0) %>% select(Contest_name) %>% unique() %>% nrow()
+```
+
+```{r}
+# Number of unique contests in Catoosa 
+wider %>% filter(County_name == "CATOOSA") %>% select(Contest_name, Has_Dem, Has_Rep) %>% count(Has_Dem, Has_Rep)
+
+wider %>% filter(County_name == "CATOOSA") %>% filter(Has_Dem==0, Has_Rep==1)
+```
 
 
 
