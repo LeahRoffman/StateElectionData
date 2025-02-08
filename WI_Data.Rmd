@@ -1,0 +1,346 @@
+---
+title: "WI_Data"
+output: html_document
+date: "2025-02-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Libraries 
+
+```{r}
+library(tidyverse)
+library(tidyr)
+library(readxl)
+library(stringr)
+```
+
+
+# TO DO 
+#---- Add 50 rows for each statewide race 
+#---- Make a statewide County-race key? 
+#---- the statewide data has state rep and senator races...need to avoid duplicates
+
+
+# Define functions 
+
+```{r}
+# Code from 
+# https://www.geeksforgeeks.org/how-to-read-a-xlsx-file-with-multiple-sheets-in-r/
+read_all_sheets <- function(file) {
+  
+  # get info about sheets 
+  sheets <- excel_sheets(file)
+  sheets <- sheets[-1] # Get rid of "Document map"
+  tibble <- lapply(sheets, function(x) read_excel(file, sheet = x))
+  data_frame <- lapply(tibble, as.data.frame)
+  
+  # assigning names to data frames 
+  names(data_frame) <- sheets
+  
+  # print data frame 
+  return(data_frame)
+}
+
+```
+
+# Load Data 
+
+Data Source: Wisconsin Election Commission Website 
+- https://elections.wi.gov/sites/default/files/documents/Statewide%20Summary%20Results_0.xlsx
+- https://elections.wi.gov/sites/default/files/documents/County%20by%20County%20Report_Representative%20to%20the%20Assembly_0.xlsx
+- https://elections.wi.gov/sites/default/files/documents/County%20by%20County%20Report_State%20Senator_0.xlsx
+
+The County by County spreadsheets contain individual tabs for each contest, with
+a list of results from each county that cast votes in that contest. The first
+tab of information has a formatting error and needs to be fixed individually. 
+
+
+```{r}
+path <- "./WI_County_StateSenators.xlsx"
+sen_data <- read_all_sheets(path)
+
+path2 <- "./WI_County_Representatives_xlsx.xlsx"
+rep_data <- read_all_sheets(path2)
+
+path3 <- "./WI_Statewide_Results.xlsx"
+state_data <- read_excel(path3, sheet = 2, trim_ws = T, range = "A5:L1400")
+
+```
+
+
+# Clean state senate & state representative data 
+
+## Loop through data 
+
+# -- State Senate races
+```{r}
+# Get list of state senate contests for 2022
+senoffice_list <- list()
+
+for (i in 1:length(sen_data)) {
+  val <- pull(sen_data[[i]][2,][1])
+  senoffice_list <- append(senoffice_list, values = val)
+}
+
+senoffice_list[[1]] <- pull(sen_data[[1]][3,][1]) ## Fix the value from the first sheet
+
+unlist(senoffice_list) ## -- > List of all the state senate contests of that year 
+
+```
+
+```{r}
+# Change column names
+for (i in 2:length(sen_data)) {
+  names(sen_data[[i]]) <- sen_data[[i]][4,] ## Get column names from the 4th row
+}
+# Fix first sheet 
+names(sen_data[[1]]) <- sen_data[[1]][5,] ## Get column names from the 5th row
+```
+
+
+# -- State Representative races
+```{r}
+# Get list of state respresentative contests 
+repoffice_list <- list()
+
+for (i in 1:length(rep_data)) {
+  val <- pull(rep_data[[i]][2,][1])
+  repoffice_list <- append(repoffice_list, values = val)
+}
+
+
+# Fix the first NA
+repoffice_list[[1]] <- pull(rep_data[[1]][3,][1])
+
+unlist(repoffice_list) ## -- > List of all the state representative contests of that year 
+
+```
+
+```{r}
+# Change column names for each data frame 
+for (i in 2:length(rep_data)) {
+  names(rep_data[[i]]) <- rep_data[[i]][4,] ## Get column names from the 4th row
+}
+
+# Fix first sheet 
+names(rep_data[[1]]) <- rep_data[[1]][5,] ## Get column names from the 5th row
+```
+
+
+# List county-contest pairs
+## -- State Senate 
+```{r}
+# Make dataset of all county-contest pairs for each state senate contest
+sencounty_list <- list()
+
+for (i in 1:length(sen_data)) {
+  
+  ## Create a list of dataframes from each sheet in the State Senate Excel
+  
+  df <- unique(sen_data[[i]]["County"])
+  df <- df %>% filter(grepl("Total", County) == F & grepl("County", County) == F 
+              & grepl("Totals:", County) == F 
+              & is.na(County)==F 
+              & !(County %in% senoffice_list))
+  
+  df["Contest_name"] <- senoffice_list[i]  
+
+  sencounty_list[[i]] <- df
+  
+}
+```
+
+
+```{r}
+
+## Rbind list of data frames 
+sencounty_key <- do.call(rbind, sencounty_list)  ## Results in some duplicate rows 
+
+## Make list of counties 
+  WI_county_list <- sencounty_key %>% select(County) %>% filter(grepl("STATE", County)==F) %>%
+    unique() %>% pull()
+  
+## Filter out  duplicate rows
+  sencounty_key <- 
+    sencounty_key %>% filter(!(County %in% senoffice_list), !(Contest_name %in% WI_county_list))
+
+```
+
+## -- State Representatives 
+
+```{r}
+# Make dataset of all county-contest pairs for each state representative contest
+repcounty_list <- list()
+
+for (i in 1:length(rep_data)) {
+  
+  ## Create a list of dataframes from each sheet in the County State Representatives Excel
+  
+  df <- unique(rep_data[[i]]["County"])
+  df <- df %>% filter(grepl("Total", County) == F & grepl("County", County) == F 
+              & grepl("Totals:", County) == F 
+              & is.na(County)==F 
+              & !(County %in% repoffice_list))
+  
+  df["Contest_name"] <- repoffice_list[i]  
+
+  repcounty_list[[i]] <- df
+  
+}
+
+```
+
+
+```{r}
+
+## Rbind list of dataframes 
+repcounty_key <- do.call(rbind, repcounty_list)  ## Results in some duplicate rows 
+
+
+## Filter out  duplicate rows
+  repcounty_key <- 
+    repcounty_key %>% 
+    filter(!(County %in% repoffice_list), !(Contest_name %in% WI_county_list))
+
+```
+
+
+# List Candidate-contest pairs
+
+## -- Senate 
+```{r}
+
+# Make dataframe of candidate - contest pairs for each contest 
+
+sencan_list <- list()
+can_list <- list()
+
+for (i in 1:length(sen_data)) {
+  
+  # Loop through each contest to get a list of candidates
+  # Add candidate-contest pairs to a new list of data frames 
+  
+  can_list <- list() ## Reset list of candidates for contest i
+  
+  ## Get candidate names and parties for contest i
+  df <- sen_data[[i]] 
+  Candidate_party <- data.frame(names(df))
+  Candidate_party <- pull(filter(Candidate_party, (names.df. %in% c("DEM", "REP", "UNA", "LIB", "GRE"))))
+  for (x in 1:length(Candidate_party)) { can_list[[x]] <- df[Candidate_party[x]][5,] }
+  
+ 
+  can_list <- unlist(can_list)
+  ndf <- data.frame(Candidate_party, can_list)  ## Make data frame for contest i
+
+  names(ndf)[2] <- "Candidate_name"   ## Rename candidate list column
+  ndf["Contest_name"] <- senoffice_list[i]   ## Add contest column
+  
+  sencan_list[[i]] <- ndf ## Add contest i data frame to list of all data frames
+  
+}
+
+```
+
+```{r}
+# Fill in the first contest separately due to Excel formatting error
+
+  can_list <- list() # Reset can_list
+  df <- sen_data[[1]] 
+  Candidate_party <- data.frame(names(df))
+  Candidate_party <- pull(filter(Candidate_party, (names.df. %in% c("DEM", "REP", "UNA", "LIB", "GRE"))))
+  for (x in 1:length(Candidate_party)) { can_list[[x]] <- df[Candidate_party[x]][6,] }
+
+  can_list <- unlist(can_list)
+  ndf <- data.frame(Candidate_party, can_list) ## Make data frame for contest 1
+  
+
+  names(ndf)[2] <- "Candidate_name"   ## Rename can_list 
+  ndf["Contest_name"] <- senoffice_list[1]    ## Add office column
+  sencan_list[[1]] <- ndf ## Add to list of data frames
+
+sencan_list[[1]] ## Check data frame
+
+```
+
+```{r}
+# Rbind all state senate contests
+
+sencan_list <- do.call(rbind, sencan_list)
+
+```
+
+# -- Rep 
+
+```{r}
+# Make dataframe of candidate - contest pairs for each contest 
+
+repcan_list <- list()
+can_list <- list()
+
+for (i in 1:length(rep_data)) {
+  
+  # Loop through each contest to get a list of candidates
+  # Add candidate-contest pairs to a new list of data frames 
+ 
+  can_list <- list()  ## Reset list of candidates for contest i
+  
+  ## Get candidate names and parties for contest i
+  df <- rep_data[[i]] 
+  Candidate_party <- data.frame(names(df))
+  Candidate_party <- pull(filter(Candidate_party, (names.df. %in% c("DEM", "REP", "UNA", "LIB", "GRE"))))
+  for (x in 1:length(Candidate_party)) { can_list[[x]] <- df[Candidate_party[x]][5,] }
+  
+  can_list <- unlist(can_list)
+  ndf <- data.frame(Candidate_party, can_list)  ## Make data frame for contest i
+  
+  names(ndf)[2] <- "Candidate_name" ## Rename can_list column
+  ndf["Contest_name"] <- repoffice_list[i]   ## Add office column
+  repcan_list[[i]] <- ndf ## Add to list of data frames
+  
+}
+
+```
+
+```{r}
+# Fill in the first contest separately due to Excel formatting error
+
+  can_list <- list() # Reset can_list
+  df <- rep_data[[1]] 
+  Candidate_party <- data.frame(names(df))
+  Candidate_party <- pull(filter(Candidate_party, (names.df. %in% c("DEM", "REP", "UNA", "LIB", "GRE"))))
+  for (x in 1:length(Candidate_party)) { can_list[[x]] <- df[Candidate_party[x]][6,] }
+  
+  can_list <- unlist(can_list)
+  ndf <- data.frame(Candidate_party, can_list)  ## Make data frame for contest 1
+
+  names(ndf)[2] <- "Candidate_name"   ## Rename can_list 
+  ndf["Contest_name"] <- repoffice_list[1]    ## Add office column
+  repcan_list[[1]] <- ndf ## Add to list of data frames
+
+```
+
+```{r}
+# Rbind all state representative contests 
+
+repcan_list <- do.call(rbind, repcan_list)
+
+```
+
+
+## Join county data to candidate data
+```{r}
+# State Senate races
+senators_final <- right_join(sencounty_key, sencan_list, by = "Contest_name")
+
+# State Representative races 
+reps_final <- right_join(repcounty_key, repcan_list, by = "Contest_name")
+
+```
+
+
+
+
+
