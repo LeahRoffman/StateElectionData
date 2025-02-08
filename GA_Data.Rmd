@@ -571,6 +571,13 @@ wider <- unnest_wider(wider, LIB, names_sep = "LIB")
 wider <- wider %>% mutate(Has_Dem = ifelse(is.na(DEMDEM1), 0, 1))
 wider <- wider %>% mutate(Has_Rep = ifelse(is.na(REPREP1), 0, 1))
 
+# Rename columns
+wider["Dem"] <- wider["DEMDEM1"]
+wider["Rep"] <- wider["REPREP1"]
+wider["LIB"] <- wider["LIBLIB1"]
+
+wider <- wider %>% select(-c("DEMDEM1", "REPREP1", "LIBLIB1"))
+
 ```
 
 
@@ -586,9 +593,10 @@ wider %>% filter(Has_Rep==0) %>% select(Contest_name) %>% unique() %>% nrow()
 ```
 
 ```{r}
-# Number of unique contests in Catoosa 
+# Number of unique contests in Catoosa by candidate parties
 wider %>% filter(County_name == "CATOOSA") %>% select(Contest_name, Has_Dem, Has_Rep) %>% count(Has_Dem, Has_Rep)
 
+# Number of unique contests in Catoosa without a Dem candidate
 wider %>% filter(County_name == "CATOOSA") %>% filter(Has_Dem==0, Has_Rep==1) %>% select(County_name, Contest_name, Has_Dem, Has_Rep)
 ```
 
