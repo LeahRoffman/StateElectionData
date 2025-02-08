@@ -110,10 +110,6 @@ test <- str_split(house, "\n")
 # Apply clean page function 
 for (i in 1:length(test)) {test[[i]] <- cleanpage(test[[i]])}
 
-
-## Test 
-result <- cleanpage(test[[1]])
-
 ```
 
 
@@ -234,7 +230,6 @@ for (i in 1:nrow(data["choice.name"])) {
   data["choice.name"][i,] <- unlist(str_split(name, "[(]"))[1]
   party_list[i] <- str_extract(name, "[ ]\\(.*")
   
-  #unlist(str_split(name, "[(]"))[2]
 }
 
 
@@ -294,8 +289,6 @@ data <- data %>%
   state_house_key <- left_join(ckey1, county_district_key, by = "District_name")
 
 ```
-
-
 
 
 
@@ -531,9 +524,9 @@ for_export %>% filter(County_name == "BEN HILL")
 
 library(googlesheets4)
 
-ss <- gs4_create(
-  "Georgia Election Data",
-  sheets = for_export)
+## ss <- gs4_create(
+##  "Georgia Election Data",
+##  sheets = for_export)
 
 ```
 
@@ -543,20 +536,20 @@ ss <- gs4_create(
 
 ```{r}
 # State Senate Districts 
-write_csv(state_senate_key, "../Exports/GA_SenDistricts_Key.csv")
+## write_csv(state_senate_key, "./GA_SenDistricts_Key.csv")
 
 # State Representative Districts
-write_csv(state_house_key, "../Exports/GA_RepDistricts_Key.csv")
+## write_csv(state_house_key, "./GA_RepDistricts_Key.csv")
 
 
 # Congressional representative districts 
-write_csv(state_congress_key, "../Exports/GA_CongressDistricts_Key.csv")
+## write_csv(state_congress_key, "./GA_CongressDistricts_Key.csv")
 
 #  District Attorney districts 
-write_csv(state_district_key, "../Exports/GA_AttorneyCircuitDistricts_Key.csv")
+## write_csv(state_district_key, "./GA_AttorneyCircuitDistricts_Key.csv")
 
 # All GA counties 
-write_csv(data.frame(County_name = unique(for_export$County_name)), "../Exports/GA_County_List.csv")
+## write_csv(data.frame(County_name = unique(for_export$County_name)), "./GA_County_List.csv")
 
 
 ```
@@ -596,7 +589,7 @@ wider %>% filter(Has_Rep==0) %>% select(Contest_name) %>% unique() %>% nrow()
 # Number of unique contests in Catoosa 
 wider %>% filter(County_name == "CATOOSA") %>% select(Contest_name, Has_Dem, Has_Rep) %>% count(Has_Dem, Has_Rep)
 
-wider %>% filter(County_name == "CATOOSA") %>% filter(Has_Dem==0, Has_Rep==1)
+wider %>% filter(County_name == "CATOOSA") %>% filter(Has_Dem==0, Has_Rep==1) %>% select(County_name, Contest_name, Has_Dem, Has_Rep)
 ```
 
 
