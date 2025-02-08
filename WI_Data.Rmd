@@ -18,30 +18,29 @@ library(stringr)
 ```
 
 
-# TO DO 
-#---- Add 50 rows for each statewide race 
-#---- Make a statewide County-race key? 
-#---- the statewide data has state rep and senator races...need to avoid duplicates
-
-
 # Define functions 
 
 ```{r}
 # Code from 
 # https://www.geeksforgeeks.org/how-to-read-a-xlsx-file-with-multiple-sheets-in-r/
+
 read_all_sheets <- function(file) {
   
-  # get info about sheets 
-  sheets <- excel_sheets(file)
-  sheets <- sheets[-1] # Get rid of "Document map"
-  tibble <- lapply(sheets, function(x) read_excel(file, sheet = x))
-  data_frame <- lapply(tibble, as.data.frame)
+  # This function reads each sheet in an inputted Excel file and drops the first
+  # tab in the Excel spreadsheet.
   
-  # assigning names to data frames 
-  names(data_frame) <- sheets
+  # Inputs: An Excel file with multiple sheets
+  # Outputs: A list of data frames for each sheet
   
-  # print data frame 
-  return(data_frame)
+  sheets <- excel_sheets(file)  ## Get info about sheets 
+  sheets <- sheets[-1] ## Get rid of "Document map" sheet
+  tibble <- lapply(sheets, function(x) read_excel(file, sheet = x)) ## Read each sheet
+  data_frame <- lapply(tibble, as.data.frame) ## Create data frame from each sheet
+  
+  
+  names(data_frame) <- sheets ## Assign names to each data frame in list 
+  
+  return(data_frame)  ## Return list of data frame 
 }
 
 ```
@@ -75,7 +74,7 @@ state_data <- read_excel(path3, sheet = 2, trim_ws = T, range = "A5:L1400")
 
 ## Loop through data 
 
-# -- State Senate races
+## --- State Senate races
 ```{r}
 # Get list of state senate contests for 2022
 senoffice_list <- list()
@@ -101,7 +100,7 @@ names(sen_data[[1]]) <- sen_data[[1]][5,] ## Get column names from the 5th row
 ```
 
 
-# -- State Representative races
+## --- State Representative races
 ```{r}
 # Get list of state respresentative contests 
 repoffice_list <- list()
@@ -131,7 +130,7 @@ names(rep_data[[1]]) <- rep_data[[1]][5,] ## Get column names from the 5th row
 
 
 # List county-contest pairs
-## -- State Senate 
+## --- State Senators 
 ```{r}
 # Make dataset of all county-contest pairs for each state senate contest
 sencounty_list <- list()
@@ -169,7 +168,7 @@ sencounty_key <- do.call(rbind, sencounty_list)  ## Results in some duplicate ro
 
 ```
 
-## -- State Representatives 
+## --- State Representatives 
 
 ```{r}
 # Make dataset of all county-contest pairs for each state representative contest
@@ -210,7 +209,7 @@ repcounty_key <- do.call(rbind, repcounty_list)  ## Results in some duplicate ro
 
 # List Candidate-contest pairs
 
-## -- Senate 
+## --- State Senators
 ```{r}
 
 # Make dataframe of candidate - contest pairs for each contest 
@@ -272,7 +271,7 @@ sencan_list <- do.call(rbind, sencan_list)
 
 ```
 
-# -- Rep 
+## --- Representatives
 
 ```{r}
 # Make dataframe of candidate - contest pairs for each contest 
@@ -330,7 +329,7 @@ repcan_list <- do.call(rbind, repcan_list)
 ```
 
 
-## Join county data to candidate data
+## --- Join county data to candidate data
 ```{r}
 # State Senate races
 senators_final <- right_join(sencounty_key, sencan_list, by = "Contest_name")
@@ -340,6 +339,222 @@ reps_final <- right_join(repcounty_key, repcan_list, by = "Contest_name")
 
 ```
 
+
+# Clean Statewide electoral data
+
+## --- Clean column names 
+```{r}
+
+## change column names
+
+names(state_data) <- c("E1", "O", "Winner", "Office", "E2", "Num_Votes", "Perc_Total_Votes", "E3", "Candidate", "E4", "Total2", "Party & Votes")
+
+
+## drop empty columns
+state_data <- state_data %>% select(-c("E1", "E2", "E3", "E4", "Total2", "Winner", "O"))
+```
+
+## --- Loop to fill empty rows 
+
+The Excel data is formatted such that the office name is not repeated down the 
+first column for all of its corresponding rows of data.
+
+```{r}
+# Loop to fill empty office values 
+
+# INITIALIZE
+current <- pull(state_data[1,1])
+
+# LOOP AND FILL VALUES
+for (i in 1:nrow(state_data)) {
+  
+  ## Loop through office names to fill down the first column of the spreadsheet
+  ## with the relevant office for each row.
+  
+  current_office <- pull(state_data[i,1]) 
+  
+  if (is.na(current_office)) {state_data[i,1] <- current}
+  
+  if (is.na(current_office) == F) {current <- current_office}
+}
+
+```
+
+```{r}
+# Drop NA values
+
+state_data <- drop_na(state_data)
+
+glimpse(state_data)
+
+```
+
+```{r}
+# Rename columns and reorganize
+
+state_data <- state_data %>% select(-c(Num_Votes, Perc_Total_Votes)) ## Drop vote totals 
+
+names(state_data) <- c("Contest_name", "Candidate_name", "Candidate_party") ## Rename cols
+
+  state_data <- state_data %>% ## Change Candidate_party values 
+    mutate(Candidate_party = case_when((Candidate_party != "Republican" &  Candidate_party != "Democrat" &Candidate_party != "Independent") ~ "OTH",
+    Candidate_party == "Republican" ~ "REP",
+    Candidate_party == "Democrat" ~ "DEM",
+    Candidate_party == "Independent" ~ "IND"))
+```
+
+
+## --- Add counties for each congressional district  
+
+Counties corresponding to each congressional electoral district were not 
+available in the statewide dataset. Using data from Daves Redistricting, county
+names were manually added based on the district map for WI congressional races
+for 2022. 
+
+Source: https://davesredistricting.org/maps#viewmap::aa64c8f5-837c-474f-819f-6eaa1094d776
+
+```{r}
+
+
+# Manually list counties for each representative district
+
+c1 <- c("WALWORTH", "ROCK", "KENOSHA", "RACINE", "MILWAUKEE") ## District 1
+c2 <- c("SAUK", "DANE", "GREEN", "LAFAYETTE", "IOWA", "ROCK") ## District 2
+c3 <- c("PIERCE", "DUNN", "PEPIN", "BUFFALO", "EAU CLAIRE", "JACKSON", ## District 3
+        "CHIPPEWA", "LA CROSS", "TREMPEALEAU", "MONROE", "VERNON", "CRAWFORD",
+        "GRANT", "RICHLAND", "SAUK", "JUNEAU", "ADAMS", "WOOD", "PORTAGE")
+c4 <- "MILWAUKEE" ## District 4
+c5 <- c("DODGE", "JEFFERSON", "WAUKESHA", "WASHINGTON", "MILWAUKEE") ## District 5
+c6 <- c("WAUSHARA", "WINNEBAGO", "MARQUETTE", "COLUMBIA", "GREEN LAKE", ## District 6
+        "DODGE", "FOND DU LAC", "CALUMET", "MANITOWOC", "SHEBOYGAN", "OZAUKEE")
+c7 <- c("ASHLAND", "BAYFIELD", "DOUGLAS", "BURNETT", "POLK", "IRON", "VILAS", ## District 7 
+        "ONEIDA", "FOREST", "LANGLADE", "MARATHON", "FLORENCE", "LINCOLN", 
+        "WOOD", "JUNEAU", "MONROE", "JACKSON", "CLARK", "TAYLOR", "CHIPPEWA",
+        "RUSK", "BARRON", "ST. CROIX", "WASHBURN", "SAWYER", "PRICE", "TAYLOR") 
+c8 <- c("WAUPACA", "WINNEBAGO", "CALUMENT", "BROWN", "OUTAGAMIE", "MENOMINEE",## District 8
+        "OCONTO", "DOOR", "KEWAUNEE", "MARINETTE")
+
+
+# Create master WI County list 
+
+WI_county_list_all <- unique(c(c1, c2, c3, c4, c5, c6, c7, c8)) 
+
+```
+
+```{r}
+
+# Make data frame of county-congressional district pairs
+
+## Make list of all congressional races for 2022
+repraces <- state_data %>% select(Contest_name) %>% unique() %>% 
+  filter( grepl("REPRESENTATIVE IN CONGRESS", Contest_name)==T) %>% pull()
+
+
+## Repeat congressional races for each county in district
+
+rep_office_list <- list()
+
+for (i in 1:8) {
+  
+  ## Loop through county lists to get the number of times each congressional 
+  ## district should be repeated in dataset
+  
+  variable_name <- paste0("c", i)
+  replength <- length(eval(parse(text = variable_name)))
+  
+  rep_office_list <- append(rep_office_list, rep(repraces[i], replength))
+}
+
+# Create data set of County-Congressional Race pairs
+statewiderep_key <- data.frame(County = c(c1, c2, c3, c4, c5, c6, c7, c8),
+                               Contest_name = unlist(rep_office_list))
+
+
+```
+
+## --- Add counties to statewide offices
+
+```{r}
+# Get list of statewide offices
+stateoffice_list <- state_data %>% select(Contest_name) %>% unique() %>% 
+  filter(!(Contest_name %in% senoffice_list) & !(Contest_name %in% repoffice_list) & grepl("REP", Contest_name)==F) %>% pull()
+
+# Repeat statewide offices 72 times (once for each county)
+state_office_list <- list()
+for (i in 1:length(stateoffice_list)) {state_office_list <- append(state_office_list, rep(stateoffice_list[i], length(WI_county_list_all)))}
+
+# Create data set of County-statewide office pairs
+statewide_key <- data.frame(County = rep(WI_county_list_all, length(stateoffice_list)),
+                           Contest_name = unlist(state_office_list))
+```
+
+## --- Join statewide data to candidate data
+
+```{r}
+#Statewide data key 
+state_data_final <- left_join(rbind(statewiderep_key, statewide_key), state_data, by = "Contest_name")
+
+```
+
+
+# Join statewide, state representative, and state senator contest data
+
+```{r}
+data_final <- rbind(reps_final, senators_final, state_data_final)
+data_final <- data_final %>% unique()
+```
+
+# Check & fix data for export 
+
+## --- Check and fix county names
+
+```{r}
+# Typos found in data
+
+## CALUMENT ~ CALUMET 
+## LA CROSS ~ LA CROSSE
+
+data_final <- data_final %>% mutate(County = ifelse(County == "LA CROSS", "LA CROSSE", County),
+                                County = ifelse(County == "CALUMENT", "CALUMET", County))
+
+```
+
+
+## --- Export csvs of all keys 
+
+```{r}
+# Counties and State Senate Districts 
+write_csv(sencounty_key, "../Exports/WI_SenDistricts_Key.csv")
+
+# State Senate Districts and Candidates
+write_csv(sencan_list, "../Exports/WI_SenCandidate_Key.csv")
+
+# Counties and State Representative Districts
+write_csv(repcounty_key, "../Exports/WI_RepDistricts_Key.csv")
+
+# State Representative Districts and Candidates 
+write_csv(repcan_list, "../Exports/WI_RepCandidates_Key.csv")
+
+# Counties and Congressional Representative Districts 
+write_csv(statewiderep_key, "../Exports/WI_CongressDistricts_Key.csv")
+ 
+# All WI counties 
+write_csv(data.frame(County_name = unique(data_final$County)), "../Exports/WI_County_List.csv")
+
+```
+
+
+## --- Export to google sheets 
+
+```{r}
+
+# Export data to google sheets for further visualization and analysis. 
+
+library(googlesheets4)
+ss <- gs4_create(
+  "Wisoncin Election Data",
+  sheets = data_final)
+```
 
 
 
