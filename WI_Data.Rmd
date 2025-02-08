@@ -519,27 +519,33 @@ data_final <- data_final %>% mutate(County = ifelse(County == "LA CROSS", "LA CR
 
 ```
 
+## --- View final data 
+
+```{r}
+data_final
+```
+
 
 ## --- Export csvs of all keys 
 
 ```{r}
 # Counties and State Senate Districts 
-write_csv(sencounty_key, "../Exports/WI_SenDistricts_Key.csv")
+## write_csv(sencounty_key, "../Exports/WI_SenDistricts_Key.csv")
 
 # State Senate Districts and Candidates
-write_csv(sencan_list, "../Exports/WI_SenCandidate_Key.csv")
+## write_csv(sencan_list, "../Exports/WI_SenCandidate_Key.csv")
 
 # Counties and State Representative Districts
-write_csv(repcounty_key, "../Exports/WI_RepDistricts_Key.csv")
+## write_csv(repcounty_key, "../Exports/WI_RepDistricts_Key.csv")
 
 # State Representative Districts and Candidates 
-write_csv(repcan_list, "../Exports/WI_RepCandidates_Key.csv")
+## write_csv(repcan_list, "../Exports/WI_RepCandidates_Key.csv")
 
 # Counties and Congressional Representative Districts 
-write_csv(statewiderep_key, "../Exports/WI_CongressDistricts_Key.csv")
+## write_csv(statewiderep_key, "../Exports/WI_CongressDistricts_Key.csv")
  
 # All WI counties 
-write_csv(data.frame(County_name = unique(data_final$County)), "../Exports/WI_County_List.csv")
+## write_csv(data.frame(County_name = unique(data_final$County)), "../Exports/WI_County_List.csv")
 
 ```
 
@@ -547,13 +553,12 @@ write_csv(data.frame(County_name = unique(data_final$County)), "../Exports/WI_Co
 ## --- Export to google sheets 
 
 ```{r}
-
 # Export data to google sheets for further visualization and analysis. 
 
-library(googlesheets4)
-ss <- gs4_create(
-  "Wisoncin Election Data",
-  sheets = data_final)
+## library(googlesheets4)
+## ss <- gs4_create(
+##  "Wisoncin Election Data",
+##  sheets = data_final)
 ```
 
 
