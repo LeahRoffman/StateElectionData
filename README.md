@@ -1,4 +1,4 @@
-# StateElectionData
+# State Election Data - ETL Project
 
 In this project, I used RStudio to process and combine data on 2022 electoral contests in Wisconsin. The end goal of my data transformation was to get the electoral contest data in a format to be easily filtered by county and type of contest. I completed this project on a volunteer basis with the goal of producing a summary of electoral contests in WI that went uncontested in 2022, i.e, contests that had only a Democratic candidate or only a Republican candidate. 
 
